@@ -22,116 +22,118 @@
     h4 {
         text-align: center;
     }
-
 </style>
 
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
+    <div id="tmf-home">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row align-center">
+            <!-- Put here the title -->
+            <h1>TellMeFirst</h1>
+            <h4>A Knowledge Discovery Application</h4>
         </div>
-    </nav>
+        <div id="form-container">
+            <form class="col s12">
 
-    <div class="row align-center">
-        <!-- Put here the title -->
-        <h1>TellMeFirst</h1>
-        <h4>A Knowledge Discovery Application</h4>
-    </div>
-    <div id="form-container">
-        <form class="col s12">
-
-            <!--Collapsible to open form elements -->
-            <ul class="collapsible popout" data-collapsible="accordion">
-                <li>
-                    <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Insert a text in English or Italian</div>
-                    <div class="collapsible-body">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <!-- Add label -->
-                                <textarea id="text" name="text" class="materialize-textarea">The final work of legendary director Stanley Kubrick, who died within a week of completing the edit, is based upon a novel by Arthur Schnitzler. Tom Cruise and Nicole Kidman play William and Alice Harford, a physician and a gallery manager who are wealthy, successful, and travel in a sophisticated social circle.</textarea>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">place</i>Insert a link</div>
-                    <div class="collapsible-body">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input placeholder="http://" id="url" type="text">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Upload a document</div>
-                    <div class="collapsible-body">
-                        <div class="row">
-                            <div class="file-field input-field">
-                                <div class="btn">
-                                    <span>File</span>
-                                    <input type="file">
-                                </div>
-                                <div class="file-path-wrapper col s12">
-                                    <input class="file-path validate" type="text">
+                <!--Collapsible to open form elements -->
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Insert a text in English or Italian</div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <!-- Add label -->
+                                    <textarea id="text" name="text" class="materialize-textarea">The final work of legendary director Stanley Kubrick, who died within a week of completing the edit, is based upon a novel by Arthur Schnitzler. Tom Cruise and Nicole Kidman play William and Alice Harford, a physician and a gallery manager who are wealthy, successful, and travel in a sophisticated social circle.</textarea>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="row">
-                <div class="row align-right">
-                    <p>
-                        <input name="language" type="radio" id="english" />
-                        <label for="english">English</label>
-                    </p>
-                    <p>
-                        <input name="language" type="radio" id="italian" />
-                        <label for="italian">Italian</label>
-                    </p>
-                </div>
-                <div class="row right-align">
-                    <button class="btn waves-effect waves-light " type="submit" name="action">Submit<i class="material-icons right">send</i>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">place</i>Insert a link</div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input placeholder="http://" id="url" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Upload a document</div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <span>UPLOAD</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper col s12">
+                                        <input class="file-path validate" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="row">
+                    <!-- Empty -->
+                    <div>
+                        <div class="row">
+                            <p class="right-align">Select the language of the text</p>
+                            <p class="right-align">
+                                <input name="language" type="radio" id="english" checked="checked" />
+                                <label for="english">English</label>
+                                <input name="language" type="radio" id="italian" />
+                                <label for="italian">Italian</label>
+                            </p>
+                        </div>
+                        <div class="row right-align">
+                            <button class="btn waves-effect waves-light " type="submit" name="action">Enhance<i class="material-icons right">send</i>
 						</button>
-                </div>
+                        </div>
+            </form>
             </div>
-        </form>
-    </div>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5 class="white-text">Footer Content</h5>
+                            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                            <h5 class="white-text">Links</h5>
+                            <ul>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                    </ul>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2014 Copyright Text
+                        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-        </div>
-    </footer>
+            </footer>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+            <div>
+
+
+                <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 </body>
 
 </html>
