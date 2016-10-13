@@ -1,0 +1,91 @@
+.card-title {
+    font-weight: bold;
+}
+.card-image img {
+    height: 100%;
+}
+#tmf-cards {
+    height: 100%;
+}
+
+/** First row **/
+
+#first-row {
+    height: 58%;
+}
+
+#card1-container {
+    height: 100%;
+}
+#card1-container .card {
+    height: 100%;
+}
+#card1-container .card-image {
+    height: 80%;
+}
+
+#card2-container {
+    height: 50%;
+}
+#card2-container .card {
+    height: 100%;
+}
+#card2-container .card-image {
+    height: 80%;
+}
+
+#card3-container {
+    height: 50%;
+}
+#card3-container .card {
+    height: 100%;
+}
+#card3-container .card-image {
+    height: 80%;
+}
+
+/** Second row **/
+
+#second-row {
+    height: 38%
+}
+
+#card4-container {
+    height: 100%;
+}
+#card4-container .card {
+    height: 100%;
+}
+#card4-container .card-image {
+    height: 80%;
+}
+
+#card5-container {
+    height: 100%;
+}
+#card5-container .card {
+    height: 100%;
+}
+#card5-container .card-image {
+    height: 80%;
+}
+
+#card6-container {
+    height: 100%;
+}
+#card6-container .card {
+    height: 100%;
+}
+#card6-container .card-image {
+    height: 80%;
+}
+
+#card7-container {
+    height: 100%;
+}
+#card7-container .card {
+    height: 100%;
+}
+#card7-container .card-image {
+    height: 80%;
+}
