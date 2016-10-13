@@ -12,6 +12,15 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+
+    #tmf-cards {
+        display: none;
+    }
+
+    </style>
+
 </head>
 
 <body>
@@ -29,7 +38,7 @@
 
         <div class="row align-center">
             <!-- Put here the title -->
-            <h1>TellMeFirst</h1>
+            <h1 onclick="TMF.submitExample()">TellMeFirst</h1>
             <h4>A Knowledge Discovery Application</h4>
         </div>
 
@@ -89,8 +98,7 @@
                     </p>
                 </div>
                 <div class="row right-align">
-                    <button class="btn waves-effect waves-light " type="submit" name="action">Enhance<i class="material-icons right">send</i>
-						</button>
+                    <button class="btn waves-effect waves-light" type="submit" onclick="TMF.submitExample()">Enhance<i class="material-icons right">send</i></button>
                 </div>
             </form>
         </div>
@@ -123,8 +131,108 @@
 
     </div>
 
+    <div id="tmf-cards">
+
+        <!-- First row -->
+        <div id="first-row" class="row">
+
+            <div id="card1-container" class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="http://www.sestodailynews.net/archivi/immagini/2016/N/Nicole-Kidman.jpg">
+                        <span class="card-title">CARD NUMBER 1</span>
+                    </div>
+                    <div class="card-content">
+                        <p>CARD NUMBER 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card2-container" class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="http://nofilmschool.com/wp-content/uploads/2014/07/EWS-tom-mask-616x348.jpg">
+                        <span class="card-title">CARD NUMBER 2</span>
+                    </div>
+                    <div class="card-content">
+                        <p>CARD NUMBER 2</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card3-container" class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://s3.drafthouse.com/images/made/eyes-wide-shut-pic-4_758_426_81_s_c1.jpg">
+                        <span class="card-title">CARD NUMBER 3</span>
+                    </div>
+                    <div class="card-content">
+                        <p>CARD NUMBER 3</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Second row -->
+
+        <div id="second-row" class="row">
+
+            <div id="card4-container" class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://neovitruvian.files.wordpress.com/2014/04/eyes14.jpg">
+                        <span class="card-title">CARD NUMBER 4</span>
+                    </div>
+                    <div class="card-content">
+                        <p>CARD NUMBER 4</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card5-container" class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="http://vignette2.wikia.nocookie.net/nonciclopedia/images/8/8c/Tom_Cruise_eyes_wide_shut.png/revision/latest?cb=20120618123723">
+                        <span class="card-title">CARD NUMBER 5</span>
+                    </div>
+                    <div class="card-content">
+                        <p>CARD NUMBER 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card6-container" class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="http://illuminatimovies.net/wp-content/uploads/illuminati-movies-eyes-wide-shut-double-eagle-rex.jpg">
+                        <span class="card-title">CARD NUMBER 6</span>
+                    </div>
+                    <div class="card-content">
+                        <p>CARD NUMBER 6</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card7-container" class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="http://screenmusings.org/movie/blu-ray/Eyes-Wide-Shut/images/Eyes-Wide-Shut-380.jpg">
+                        <span class="card-title">CARD NUMBER 7</span>
+                    </div>
+                    <div class="card-content">
+                        <p>CARD NUMBER 7</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/tmf.js"></script>
 </body>
 
 </html>
